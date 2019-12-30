@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controllers.Login"
+            prefHeight="400.0" prefWidth="600.0">
+    <children>
+        <VBox id="sidebar" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="600.0" prefWidth="321.0" style="-fx-background-color: #1698f2;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="479.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../assets/images/mikebook-dark.png" />
+                    </image>
+                </ImageView>
+                <Label text="Welcome to" textAlignment="CENTER" textFill="WHITE">
+                    <VBox.margin>
+                        <Insets bottom="10.0" />
+                    </VBox.margin>
+                    <font>
+                        <Font name="System Bold" size="18.0" />
+                    </font>
+                </Label>
+                <Label text="HMS" textAlignment="CENTER" textFill="WHITE" textOverrun="WORD_ELLIPSIS">
+                    <font>
+                        <Font name="System Bold" size="31.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+        <Label layoutX="421.0" layoutY="183.0" />
+        <Label layoutX="398.0" layoutY="180.0" text="Welcome To HMS" textFill="#1899f0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Label>
+        <Label layoutX="398.0" layoutY="225.0" text="Sign in by entering the informations below " textFill="#bfafaf">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Label>
+        <TextField layoutX="397.0" layoutY="300.0" prefHeight="32.0" prefWidth="300.0" promptText="Email">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </TextField>
+        <PasswordField layoutX="397.0" layoutY="369.0" prefHeight="26.0" prefWidth="300.0" promptText="Password">
+            <font>
+                <Font size="16.0" />
+            </font>
+        </PasswordField>
+        <Button fx:id="btn_signin" layoutX="397.0" layoutY="420.0" mnemonicParsing="false" onMouseClicked="#login" prefHeight="39.0" prefWidth="306.0" style="-fx-background-color: #1698f2;" text="Sign in" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="16.0" />
+            </font>
+            <graphic>
+                <!--            <Icon content="LOCK_OPEN" />-->
+            </graphic>
+        </Button>
+        <Label layoutX="397.0" layoutY="274.0" text="Email Address" textFill="#827d7d" />
+        <Label layoutX="398.0" layoutY="346.0" text="Password" textFill="#827d7d" />
+        <Button fx:id="btn_close" layoutX="744.0" mnemonicParsing="false" onMouseClicked="#close_app" prefHeight="47.0" prefWidth="56.0" style="-fx-background-color: #fff;" text="x" textAlignment="CENTER" textFill="#838383" AnchorPane.bottomAnchor="553.0" AnchorPane.leftAnchor="744.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <font>
+                <Font name="System Bold" size="20.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
